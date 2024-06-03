@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document User</title>
+</head>
+<body>
+    <form action="control.php" method="post">
+        <h2>Form Entries</h2><br><br>
+        <b>Name :</b>
+        <input type="text" name="name"><br><br>
+        <b>Surname :</b>
+        <input type="text" name="surname"><br><br>
+        <b>Gender </b>
+        <input type="radio" name="gender" value="W">Woman
+        <input type="radio" name="gender" value="M">Man <br><br>
+        <b>City </b>
+        <select name="city" id="" class="city">
+            <option value="" selected>Choose..</option>
+            <option value="06">Ankara</option>
+            <option value="34">İstanbul</option>
+            <option value="35">İzmir</option>
+        </select><br><br>
+        <b>Hobbies </b>
+        <input type="checkbox" name="hobby[]" value="travel">Travel 
+        <input type="checkbox" name="hobby[]" value="book">Read a book
+        <input type="checkbox" name="hobby[]" value="music">Listen music
+        <input type="checkbox" name="hobby[]" value="dance">Dance
+        <input type="checkbox" name="hobby[]" value="sing">Sing a song <br><br>
+        <b>Message</b> <br>
+        <textarea name="message" cols="40" rows="20" id="" placeholder="Enter your message.."></textarea><br><br>
+        <input type="file" name="image" accept=".png, .jpg, .pdf"> <br><br>
+        <button type="submit">SEND</button>
+
+    </form>
+</body>
+</html>
